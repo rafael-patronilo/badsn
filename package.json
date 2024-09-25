@@ -1,0 +1,16 @@
+{
+  "name": "badsn",
+  "version": "1.0.0",
+  "description": "A Social Network that is not bad at all and has no vulnerabilities",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "create_tables": "node create_tables.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "sqlite3" : "^5.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
