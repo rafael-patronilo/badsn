@@ -5,7 +5,7 @@ const path = require('path');
 
 const db = new sqlite3.Database('database.sqlite');
 
-http.createServer((req, res) => {
+const server = http.createServer((req, res) => {
   const {pathname} = url.parse(req.url);
   if (pathname === '/posts') {
     if (req.method === 'GET'){
@@ -38,4 +38,6 @@ http.createServer((req, res) => {
     res.writeHead(404);
     res.end('Not found');
   }
-}).listen(8080);
+});
+
+server.listen(8080);
