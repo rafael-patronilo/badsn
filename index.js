@@ -1,7 +1,7 @@
 const sqlite3 = require('sqlite3');
-const http = require('node:http');
-const url = require('node:url');
-const path = require('node:path');
+const http = require('http');
+const url = require('url');
+const path = require('path');
 
 const db = new sqlite3.Database('database.sqlite');
 
